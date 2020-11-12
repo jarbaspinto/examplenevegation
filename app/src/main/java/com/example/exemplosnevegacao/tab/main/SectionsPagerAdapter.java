@@ -23,6 +23,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
+
+    public static final int TAB_1 = 0;
+    public static final int TAB_2 = 1;
+    public static final int TAB_3 = 2;
+
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -33,9 +38,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch(position){
-            case 0: return new FragmentA();
-            case 1: return new FragmentB();
-            case 2: return new FragmentC();
+            case TAB_1: return new FragmentA();
+            case TAB_2: return new FragmentB();
+            case TAB_3: return new FragmentC();
             default:return new FragmentSelection();
         }
     }

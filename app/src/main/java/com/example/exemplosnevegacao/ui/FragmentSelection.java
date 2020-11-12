@@ -1,5 +1,6 @@
 package com.example.exemplosnevegacao.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,11 +12,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.exemplosnevegacao.R;
+import com.example.exemplosnevegacao.tab.TabActivity;
 
 public class FragmentSelection extends Fragment {
-
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
     public FragmentSelection() {
     }
@@ -34,6 +33,7 @@ public class FragmentSelection extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Toast.makeText(getContext(),"Pokemon Selection", Toast.LENGTH_LONG).show();
             }
         });

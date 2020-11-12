@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exemplosnevegacao">
         <activity
+            android:name=".NavegationActivity"
+            android:label="@string/title_activity_navegation"
+            android:theme="@style/Theme.Exemplosnevegacao.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".tab.TabActivity"
             android:label="@string/title_activity_tab"
             android:theme="@style/Theme.Exemplosnevegacao.NoActionBar">
